@@ -19,7 +19,7 @@ args = commandArgs(trailingOnly=TRUE)
 sims <- as.numeric(args[1])
 reps <- as.numeric(args[2])
 sim.type <- as.character(args[3])
-ref.file <- "out.pure.topLoci.gen"
+ref.file <- "out.pure.gen"
 
 #print(sim.type)
 if (sim.type == "GT"){

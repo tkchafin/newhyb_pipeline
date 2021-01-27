@@ -94,8 +94,8 @@ for(my $i = 1; $i < @strlines; $i+=2){
 		
 		#front pad each allele with a 0.
 		my @templocus;
-		push(@templocus, sprintf("%02d", $allele1[$j]));
-		push(@templocus, sprintf("%02d", $allele2[$j]));
+		push(@templocus, sprintf("%03d", $allele1[$j]));
+		push(@templocus, sprintf("%03d", $allele2[$j]));
 		
 		#join the two alleles for a locus together
 		my $temp = join("", @templocus);
@@ -112,7 +112,6 @@ for(my $i = 1; $i < @strlines; $i+=2){
 }
 
 open(OUT, '>', $out) or die "Can't open $out: $!\n\n";
-print OUT "Title line: \"File converted from pyRAD\"\n";
 for(my $i=0; $i<$numloci; $i++){
 	print OUT "Locus", $i+1, "\n";
 }

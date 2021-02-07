@@ -119,7 +119,7 @@ export -f run_nh
 #find "out.sims" -name "*_NH.txt" | parallel -j 1 'run_nh {} /Users/tyler/programs/newhyb_pipeline/newhybrids/bin/OSX/newhybsng out.sims.NH.Results 10 20'
 
 for d in `find "out.sims" -name "*_NH.txt"`; do
-  run_nh $d /Users/tyler/programs/newhyb_pipeline/newhybrids/bin/OSX/newhybsng out.sims.NH.Results $burnin $mcmc
+  run_nh $d $nh_path out.sims.NH.Results $burnin $mcmc
 done
 
 #check simulations for convergence

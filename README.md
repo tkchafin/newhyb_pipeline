@@ -1,5 +1,7 @@
 # newhyb_pipeline
 
+--work in progress--
+
 ## Installation 
 You will need the hybriddetective, genepopedit, and parallelnewhybrid R packages. In R, install them like so:
 
